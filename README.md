@@ -1,11 +1,11 @@
 # Haven — White Noise Generator
 
-A single-page browser app for sleep, focus, and rain-on-the-window hours.
+A browser app for sleep, focus, and rain-on-the-window hours.
 
-Noise and weather are **synthesized in the tab** with the Web Audio API (no audio files). You can layer that under public **meditation / relaxation radio** streams, or paste your own `.m3u` / stream URL.
+Noise and weather are **synthesized in the tab** with the Web Audio API (no audio files). Layer that under public **meditation / relaxation radio** streams, or paste your own `.m3u` / stream URL.
 
-**Live file:** [index.html](index.html)  
-**Repo:** https://github.com/tbenitz/white-noise-generator
+**Repo:** https://github.com/tbenitz/white-noise-generator  
+**App (after Pages is live):** https://tbenitz.github.io/white-noise-generator/
 
 ## Run it
 
@@ -16,11 +16,9 @@ git clone https://github.com/tbenitz/white-noise-generator.git
 cd white-noise-generator
 ```
 
-Then open `index.html` in a browser.
+Open `index.html` in a browser (`app.js` must sit next to it).
 
-Or enable GitHub Pages on this repo (`Settings → Pages → Deploy from a branch → main / root`). After Pages is on, the app will be at:
-
-https://tbenitz.github.io/white-noise-generator/
+Or use GitHub Pages. This repo includes a Pages deploy workflow on `main`. If the first run needs approval, open **Settings → Pages** and allow GitHub Actions as the source.
 
 Browsers require a click (or spacebar) before audio starts.
 
@@ -51,8 +49,10 @@ Streams belong to those stations and can move or drop. If one fails, try another
 ## Files
 
 ```
-index.html   # the whole app
-LICENSE      # MIT
+index.html                    # UI + styles
+app.js                        # Web Audio generator + radio player
+.github/workflows/pages.yml   # GitHub Pages deploy
+LICENSE                       # MIT
 ```
 
 ## License
